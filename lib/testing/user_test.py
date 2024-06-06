@@ -6,10 +6,10 @@ class TestUser:
     '''Class "User" in user.py'''
 
     def test_is_class(self):
-        '''is a class.'''
+        ''' a class.'''
         assert(object in User.__bases__)
 
     def test_initializes_with_names(self):
-        '''initializes with first and last name.'''
-        my_user = User("My", "User")
-        assert((my_user.first_name, my_user.last_name) == ("My", "User"))
+        ''' first and last name.'''
+        the_user = User("My", "User")
+        assert((the_user.first_name, the_user.last_name) == ("My", "User"))
